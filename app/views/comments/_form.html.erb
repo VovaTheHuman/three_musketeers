@@ -1,0 +1,7 @@
+<%= form_with(model: [post, post.comments.build], local: true) do |f| %>
+  <div class="comment-form__wrap">
+    <%= f.text_area :body, placeholder: "Напишіть коментар...", class: "textarea-full" %>
+    <br>
+    <%= f.submit "Коментувати", class: "comment-submit" %>
+  </div>
+<% end %>

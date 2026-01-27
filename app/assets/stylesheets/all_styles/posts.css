@@ -1,0 +1,148 @@
+/* moved from app/assets/stylesheets/posts.css */
+.feed-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.feed-post {
+  background: white;
+  border: 1px solid #dbdbdb;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.post-header {
+  padding: 14px;
+}
+
+.feed-post-placeholder {
+  background-color: #fafafa;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid #efefef;
+  border-bottom: 1px solid #efefef;
+}
+
+.post-footer {
+  padding: 12px;
+}
+
+.post-time {
+  color: #8e8e8e;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+/* Styles for posts/index view */
+.posts-index__container {
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+
+.posts-index__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.posts-index__header-actions a + a {
+  margin-left: 10px;
+}
+
+.link-danger {
+  margin-left: 10px;
+  color: red;
+}
+
+.link-strong {
+  font-weight: bold;
+  color: blue;
+}
+
+.new-post-btn {
+  padding: 10px 20px;
+  background: #0095f6;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.post-card {
+  border: 1px solid #ccc;
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.post-meta-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.post-image {
+  margin-bottom: 10px;
+}
+
+.post-image img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.post-body {
+  margin-bottom: 15px;
+}
+
+.reactions-btn {
+  background: none;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  cursor: pointer;
+  padding: 5px 15px;
+}
+
+.comments-wrap {
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.comment-item {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+}
+
+.comment-author {
+  font-size: 0.9em;
+  margin-bottom: 3px;
+}
+
+.comment-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.comment-action-link {
+  text-decoration: none;
+  font-size: 0.8em;
+}
+
+.new-post-wrap {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.comment-form-wrap {
+  margin-top: 10px;
+}
+

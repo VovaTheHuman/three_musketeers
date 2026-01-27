@@ -1,0 +1,79 @@
+/* moved from app/assets/stylesheets/profiles.css */
+.profile-container {
+  max-width: 935px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.profile-header {
+  display: flex;
+  margin-bottom: 44px;
+}
+
+.avatar-placeholder {
+  width: 150px;
+  height: 150px;
+  background-color: #fafafa;
+  border-radius: 50%;
+  border: 1px solid #dbdbdb;
+  margin-right: 100px;
+}
+
+.profile-info {
+  flex-grow: 1;
+}
+
+.profile-top-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.profile-top-row h1 {
+  font-size: 28px;
+  font-weight: 300;
+}
+
+.edit-btn {
+  background: transparent;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  padding: 5px 9px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.profile-stats {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+.full-name {
+  font-weight: 600;
+}
+
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 колонки, як в інсті */
+  gap: 28px;
+}
+
+.post-item {
+  background-color: #efefef;
+  aspect-ratio: 1 / 1; /* Робимо блоки ідеально квадратними */
+  position: relative;
+  cursor: pointer;
+}
+
+.post-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

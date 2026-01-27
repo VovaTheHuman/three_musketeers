@@ -1,0 +1,25 @@
+<div class="accounts-new__panel">
+  <h2>Реєстрація мушкетера</h2>
+
+  <%= form_with model: @account, local: true do |f| %>
+    <div class="form-row">
+      <%= f.label :username, "Нікнейм" %><br>
+      <%= f.text_field :username, class: "full-width" %>
+    </div>
+    <div class="form-row">
+      <%= f.label :email %><br>
+      <%= f.email_field :email, class: "full-width" %>
+    </div>
+    <div class="form-row">
+      <%= f.label :password, "Пароль" %><br>
+      <%= f.password_field :password, class: "full-width" %>
+    </div>
+    <div class="form-row form-row--large">
+      <%= f.label :password_confirmation, "Підтвердження пароля" %><br>
+      <%= f.password_field :password_confirmation, class: "full-width" %>
+    </div>
+    <%= f.submit "Зареєструватися", class: "btn-primary" %>
+  <% end %>
+  
+  <p><%= link_to "Назад до стрічки", root_path %></p>
+</div>

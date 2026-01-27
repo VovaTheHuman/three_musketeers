@@ -1,0 +1,45 @@
+<div class="profile-container">
+  <header class="profile-header">
+    <div class="profile-avatar">
+      <div class="avatar-placeholder"></div>
+    </div>
+
+    <section class="profile-info">
+      <div class="profile-top-row">
+        <h1><%= @profile.username %></h1>
+        <button class="edit-btn">Редагувати профіль</button>
+      </div>
+
+      <ul class="profile-stats">
+        <li><strong><%= @posts.count %></strong> дописів</li>
+        <li><strong><%= @profile.account.followers.count %></strong> читачів</li>
+        <li><strong><%= @profile.account.following.count %></strong> стежить</li>
+      </ul>
+
+      <div class="profile-bio">
+        <p class="full-name"><%= @profile.display_name %></p>
+        <p><%= @profile.bio %></p>
+      </div>
+    </section>
+  </header>
+
+  <hr class="separator">
+
+  <div class="posts-grid">
+    <% # Головне виправлення: використовуємо перемінну циклу 'post' %>
+    <% @posts.each do |post| %>
+      <div class="post-item">
+        <%= link_to post_path(post), class: "post-link" do %>
+          <div class="post-overlay">
+            <span>❤️ <%= post.reactions.count %></span>
+          </div>
+          <div class="post-placeholder">
+            <% if post.media_assets.any? %>
+              <span class="carousel-icon">📁</span>
+            <% end %>
+          </div>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+</div>
